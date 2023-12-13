@@ -8,8 +8,8 @@ display.style.font = window.getComputedStyle(display).getPropertyValue('font');
 // Create it here so that it is not created every time a click event occurs
 let enableDot = true;
 
-// Add a click event handler to any element in the document
-document.addEventListener("click", function (event) {
+// Add a click event handler to any element in the rows
+document.querySelector('.rows').addEventListener("click", function (event) {
 
   // If the previous calculation resulted in division by zero or only operations were entered
   if (display.innerText == 'NaN') display.innerText = '0';
